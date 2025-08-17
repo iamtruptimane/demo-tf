@@ -17,13 +17,3 @@ resource "aws_instance" "web-us-east" {
     Name = "web-USA"
   }
 }
-resource "aws_instance" "web-ap-south" {
-  provider = aws.ap-south
-  ami = "ami-0144277607031eca2"
-  instance_type = "t3.micro"
-  key_name = "mumbai-key"
-  vpc_security_group_ids = ["sg-03be1aec650d2bbee"]
-  tags = {
-    Name = "web-mumbai"
-  }
-}
