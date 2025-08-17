@@ -7,12 +7,6 @@ provider "aws" {
   alias = "ap-south"
 }
 
-provider "aws" {
-  region = "ap-south-1"
-  alias = "ap-south"
-}
-
-
 resource "aws_instance" "web-us-east" {
   provider = aws.us-east
   ami = "ami-0de716d6197524dd9"
